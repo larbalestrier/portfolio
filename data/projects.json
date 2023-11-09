@@ -1,0 +1,83 @@
+[
+    {
+        "id": "argentbank",
+        "title": "ArgentBank",
+        "imageUrl": "./assets/images/Argent-Bank.webp",
+        "description": "En tant que développeur front-end chez Argent Bank, j'ai réalisé le front-end d'une application web React. J'ai également utilisé Redux pour gérer l'état de l'application. L'application permet aux utilisateurs de visiter la page d'accueil, de se connecter, de visualiser leur profil, et de se déconnecter. J'ai également appliqué des bonnes pratiques Green Code en optimisant les images et créant des composants réutilisables. Jai également réalisé une documentation Swagger pour la gestions futurs des transactions.",
+        "code": "https://github.com/larbalestrier/projet_11_ArgentBank-website",
+        "site": null,
+        "languages": "HTML5 / CSS3 / JavaScript / NodeJS / REACT / JSX / ReactRouter / Redux / MongoDB / DevTools"
+    },
+    {
+        "id": "events",
+        "title": "724 Events",
+        "imageUrl": "./assets/images/724-Events.webp",
+        "description": "En tant que développeur front-end freelance, ma mission consistait à résoudre les problèmes et à tester le site web de l'agence événementielle 724events. Le site, partiellement intégré par un précédent développeur, présentait des bugs qui entraînaient l'expérience des visiteurs. J'ai utilisé des outils de développement, notamment React Developer Tools, pour inspecter le comportement du site. J'ai identifié et corrigé les problèmes, en me basant sur les indications de l'ancien développeur et en complétant le cahier de recette.",
+        "code": "https://github.com/larbalestrier/projet10",
+        "site": null,
+        "languages": "HTML5 / CSS3 / JavaScript / Wave"
+    },
+    {
+        "id": "ninacarducci",
+        "title": "Portfolio Nina Carducci",
+        "imageUrl": "./assets/images/Nina-Carducci.webp",
+        "description": "En tant que développeur freelance, j'ai optimisé le site de la photographe Nina Carducci. Le site avait des problèmes de vitesse de chargement et de visibilité en ligne. J'ai amélioré le référencement SEO, les performances du site et l'accessibilité. J'ai optimisé le poids des images, ajouté des balises pour les réseaux sociaux et renforcé le référencement local pour une portée plus large. J'ai utilisé des outils tels que Lighthouse et Wave pour évaluer et améliorer les performances du site. Notre collaboration a résolu ces problèmes et a augmenté la visibilité en ligne de Nina.",
+        "code": "https://github.com/larbalestrier/projet-9",
+        "site": "",
+        "languages": "HTML5 / CSS3 / JavaScript / SEO / Wave / Schema.org / Responsive / Lighthouse"
+    },
+    {
+        "id": "kasa",
+        "title": "Kasa",
+        "imageUrl": "./assets/images/Kasa.webp",
+        "description": "J'ai rejoint l'équipe de Kasa en tant que développeur front-end freelance pour participer à la refonte complète de leur site web. Kasa est une entreprise de location d'appartements entre particuliers, leader en France, qui a décidé de moderniser sa plateforme. Ma mission principale consistait à développer l'ensemble de l'application front-end en utilisant React, en suivant les maquettes Figma et en garantissant la qualité du code.",
+        "code": "https://github.com/larbalestrier/projet-8",
+        "site": null,
+        "languages": "HTML5 / CSS3 / JavaScript / JSON / REACT / JSX / ReactRouter"
+    },
+    {
+        "id": "sophiebluel",
+        "title": "Portfolio Sophie Bluel",
+        "imageUrl": "./assets/images/Sophie-Bluel.webp",
+        "description": "Dans ce projet pour l'agence ArchiWebos, j'ai été chargé de réaliser un site web dynamique, de développer plusieurs fonctionnalités pour le portfolio d'une architecte d'intérieur. Cela comprenait la création de la page de présentation des travaux de l'architecte, la mise en place de la page de connexion de l'administrateur du site, et le développement d'une modale permettant d'uploader de nouveaux médias. J'ai utilisé le code back-end fourni pour créer des requêtes vers l'API, permettant ainsi de récupérer les données des projets.",
+        "code": "https://github.com/larbalestrier/projet6",
+        "site": null,
+        "languages": "HTML5 / CSS3 / JavaScript / NodeJS"
+    },
+    {
+        "id": "printit",
+        "title": "Print It",
+        "imageUrl": "./assets/images/Print-it.webp",
+        "description": "Dans ce projet de développement front-end, j'ai été chargé de créer un carrousel interactif en JavaScript pour le site web de l'imprimerie Print It. Mon objectif était de permettre aux visiteurs de naviguer à travers les images en mettant en place des flèches pour la navigation, des points indicateurs pour suivre la position actuelle, et en garantissant une navigation fluide avec un défilement en boucle.",
+        "code": "https://github.com/larbalestrier/projet5-Print-it",
+        "site": "https://larbalestrier.github.io/projet5-Print-it/",
+        "languages":"HTML5 / CSS3 / JavaScript"
+    },
+    {
+        "id": "booki",
+        "title": "Booki",
+        "imageUrl": "./assets/images/Booki.webp",
+        "description": "En tant que développeuse Front-End, j'ai été chargé d'intégrer l'interface du site Booki. Travaillant en collaboration étroite avec l'UI designer et le CTO de l'entreprise, j'ai transformé les maquettes en code HTML et CSS. Le résultat final a été une expérience utilisateur conviviale et un site web fonctionnel.",
+        "code": "",
+        "site": "",
+        "languages": "HTML5 / CSS3 / Responsive"
+    },
+    {
+        "id": "ohmyfood",
+        "title": "OhMyFood",
+        "imageUrl": "./assets/images/Ohmyfood.webp",
+        "description": "En tant que développeur junior chez OhMyFood, j'ai contribué au développement d'un site mobile first permettant aux clients de découvrir les menus de restaurants gastronomiques à Paris, avec la possibilité de composer leur repas à l'avance. Ce projet a aidé OhMyFood à s'imposer sur le marché de la restauration parisienne, en mettant l'accent sur des animations soignées pour améliorer l'expérience utilisateur.",
+        "code": "https://github.com/larbalestrier/projet4-ohmyfood",
+        "site": "https://larbalestrier.github.io/projet4-ohmyfood/",
+        "languages": "HTML5 / CSS3 / Sass / Responsive / Animations"
+    } , 
+    {
+        "id": "ridingcities",
+        "title": "Riding Cities",
+        "imageUrl": "./assets/images/Riding-Cities.webp",
+        "description":"Actualiser la page Internet de Riding Cities de la façon suivante : Créer une nouvelle section, “Les membres fondateurs”, avec les noms et photos des créateurs de l’association, modifier la section comprenant le bouton “Télécharger le planning de cours” pour ajouter un titre et deux boutons permettant de télécharger deux plannings de cours différents (un pour les enfants et un pour les adultes).",
+        "code": "https://github.com/larbalestrier/site-Riding-Citites",
+        "site": "https://larbalestrier.github.io/site-Riding-Citites/",
+        "languages": "HTML5 / CSS3"
+    }
+  ]
