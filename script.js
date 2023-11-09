@@ -1,9 +1,33 @@
 const gallery = document.querySelector('#gallery');
 const hardskill = document.querySelector('#icone');
 
+
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modal-image');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+
+/* script header */
+const navItems = document.querySelectorAll('.header_li');
+
+    // Parcourez chaque élément et ajoutez des écouteurs d'événements pour gérer le clic
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Ajoutez la classe "active" à l'élément cliqué
+            item.classList.add('active');
+            
+            // Parcourez les autres éléments et supprimez la classe "active" sauf pour l'élément cliqué
+            navItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+        });
+    });
+/*section travaux */
 async function loadProjects() {
   try {
-    const response = await fetch("./projects.json");
+    const response = await fetch("./data/projects.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -23,17 +47,30 @@ function createProjectElement(project) {
   const titleElement = document.createElement('h3');
   imgElement.src = project.imageUrl;
   titleElement.innerText = project.title;
+  projectElement.classList.add("container_project")
   projectElement.appendChild(imgElement);
   projectElement.appendChild(titleElement);
   gallery.appendChild(projectElement);
+//gestion de clic pour modal // 
+  projectElement.addEventListener('click', () => {
+  modalImage.src = project.imageUrl;
+  modalTitle.textContent = project.title;
+  modalDescription.textContent = project.description;
+  modal.style.display = 'block';
+  });
 }
+
+// Gestionnaire d'événement pour fermer le modal
+modal.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
 
 // Appel de la fonction pour charger les projets
 loadProjects();
 
 async function loadskill() {
   try {
-    const response = await fetch("./hardskill.json");
+    const response = await fetch("./data/hardskill.json");
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
@@ -48,10 +85,11 @@ async function loadskill() {
 }
 
 function createSkillElement(icone) {
-  const iconelist= document.createElement('li')
-  const iconecontainer =document.createElement('div')
+  const iconelist= document.createElement('li');
+  const iconecontainer =document.createElement('div');
   const titleElement = document.createElement('p');
   titleElement.innerText = icone.name;
+  iconelist.classList.add("icone-list");
   iconecontainer.classList.add(icone.class);
   iconecontainer.classList.add("style-icone");
   titleElement.classList.add('name-icone');
@@ -63,25 +101,3 @@ function createSkillElement(icone) {
 loadskill()
 
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Empêche l'envoi par défaut du formulaire
-
-      // Récupération des valeurs du formulaire
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-
-      // Vous pouvez traiter ces valeurs comme vous le souhaitez, par exemple, les envoyer à un serveur via une requête AJAX.
-
-      // Réinitialiser le formulaire
-      form.reset();
-
-      // Afficher un message de confirmation
-      alert("Merci pour votre message ! Nous vous répondrons bientôt.");
-  });
-});
