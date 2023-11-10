@@ -81,6 +81,11 @@ h1 span{
 #travaux {
     text-align: center;   
 }
+.container_gallery{
+    display:  flex;
+    margin-inline: 10%;
+    
+}
 
 #gallery {
     display: grid;
@@ -98,7 +103,7 @@ h1 span{
     -webkit-box-shadow: 8px 8px 18px 7px rgba(64,64,64,0.53); 
     box-shadow: 8px 8px 18px 7px rgba(64,64,64,0.53);
     cursor: pointer;
-     transition: transform 0.3s; /* Pour ajouter une animation fluide */
+    transition: transform 0.3s; 
 }
 .container_project:hover {
     transform: scale(1.1);
@@ -151,6 +156,7 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+       
 }
 
 .modal-content {

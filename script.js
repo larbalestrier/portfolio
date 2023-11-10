@@ -53,10 +53,10 @@ function createProjectElement(project) {
   gallery.appendChild(projectElement);
 //gestion de clic pour modal // 
   projectElement.addEventListener('click', () => {
-  modalImage.src = project.imageUrl;
-  modalTitle.textContent = project.title;
-  modalDescription.textContent = project.description;
-  modal.style.display = 'block';
+    modalImage.src = project.imageUrl;
+    modalTitle.textContent = project.title;
+    modalDescription.textContent = project.description;
+    modal.style.display = 'block';
   });
 }
 
