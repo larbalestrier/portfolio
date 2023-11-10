@@ -90,6 +90,7 @@ function createSkillElement(icone) {
   const titleElement = document.createElement('p');
   titleElement.innerText = icone.name;
   iconelist.classList.add("icone-list");
+  iconecontainer.classList.add("colored");
   iconecontainer.classList.add(icone.class);
   iconecontainer.classList.add("style-icone");
   titleElement.classList.add('name-icone');
