@@ -7,7 +7,14 @@ body{
 
 h2{
     font-weight: 200;
+    padding: 75px;
     
+}
+footer {
+    text-align: center;
+    color: white;
+    background-color: #1e1e1e;
+    padding: 25px;
 }
 /* header */
 h1{
@@ -123,12 +130,14 @@ h1 span{
     width: 100%;
 }
 .icone-list {
-    
+    transition: transform 0.3s;
     border-radius: 5px;
     padding: 5px;
 
 }
-
+li.icone-list:hover {
+    transform: scale(1.5);
+}
 .style-icone{
     font-size: 200%;
     display: flex;
@@ -141,11 +150,63 @@ h1 span{
 .list_competence{
 list-style: none;
 }
-footer {
-    text-align: center;
-    color: white;
-    background-color: black;
+
+
+/*section contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
 }
+.contact_lien{
+    text-decoration: none;
+}
+.container_envelope{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    border-radius: 125px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 11px rgba(48,48,48,0.26); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 11px rgba(48,48,48,0.26);
+    animation: scale 2s infinite;
+}
+@keyframes scale {
+    0%{
+        scale:1
+    }
+    50%{
+        scale: 1.3;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.style_envelope{
+    font-size: 400%;
+    color: white; 
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    0% {
+      -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+        scale: 1;
+    }
+    50%{
+        scale: 1.5;
+    }
+    100% {
+        -webkit-transform: translateZ(-260px) rotateY(-180deg);
+        transform: translateZ(-260px) rotateY(-180deg);
+        scale: 1;      
+    }
+  }
+
 /* Styles pour le modal */
 .modal {
     display: none;
