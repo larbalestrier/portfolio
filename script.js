@@ -6,6 +6,8 @@ const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
+const linkGithub = document.querySelector('.link-github')
+const linkSite = document.querySelector('.link-site')
 
 /* script header */
 const navItems = document.querySelectorAll('.header_li');
@@ -56,6 +58,13 @@ function createProjectElement(project) {
     modalImage.src = project.imageUrl;
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.description;
+    linkGithub.href = project.code;
+    if (project.site) {
+      linkSite.href = project.site;
+      linkSite.style.display = 'inline-block'; // Afficher le lien seulement s'il existe
+    } else {
+      linkSite.style.display = 'none'; // Masquer le lien s'il n'existe pas
+    }
     modal.style.display = 'block';
   });
 }

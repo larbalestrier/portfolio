@@ -8,6 +8,7 @@ body{
 h2{
     font-weight: 200;
     padding: 75px;
+    padding: 50px 0px 75px 0px
     
 }
 footer {
@@ -15,6 +16,10 @@ footer {
     color: white;
     background-color: #1e1e1e;
     padding: 25px;
+}
+section{
+    border-bottom: 1px solid #1e1e1e;
+    padding-bottom: 75px;
 }
 /* header */
 h1{
@@ -81,7 +86,6 @@ h1 span{
 /*section présentation  */
 #presentation{
     text-align: center;
-    padding: 50px;
 }
 
 /* section travaux */
@@ -237,5 +241,18 @@ list-style: none;
     font-size: 20px;
     cursor: pointer;
 }
-
-
+#modal-title{
+    padding: 0px;
+}
+.modal-container-link{gap: 500px;}
+.size-logo-modal{
+    font-size: 50px;
+    color: #1e1e1e;
+}
+.link-github{
+    text-decoration: none;
+}
+.link-site{
+    text-decoration: none;
+    padding-left: 25px;
+}
