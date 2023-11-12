@@ -3,9 +3,11 @@ const hardskill = document.querySelector('#icone');
 
 
 const modal = document.getElementById('modal');
+const closeModal = document.querySelector('.close-modal');
 const modalImage = document.getElementById('modal-image');
 const modalTitle = document.getElementById('modal-title');
 const modalDescription = document.getElementById('modal-description');
+const modalTechnologies = document.getElementById('modal-technologies');
 const linkGithub = document.querySelector('.link-github')
 const linkSite = document.querySelector('.link-site')
 
@@ -36,8 +38,10 @@ function createProjectElement(project) {
   projectElement.appendChild(imgElement);
   projectElement.appendChild(titleElement);
   gallery.appendChild(projectElement);
+
 //gestion de clic pour modal // 
-  projectElement.addEventListener('click', () => {
+  projectElement.addEventListener('click', (e) => {
+    e.preventDefault()
     modalImage.src = project.imageUrl;
     modalTitle.textContent = project.title;
     modalDescription.textContent = project.description;
@@ -48,12 +52,19 @@ function createProjectElement(project) {
     } else {
       linkSite.style.display = 'none'; // Masquer le lien s'il n'existe pas
     }
+    modalTechnologies.innerHTML = '' // evite l'accumulation de technologies à chaque ouverture de la modal
+    project.technologies.forEach(tech => {
+      const techElement = document.createElement('li');
+      modalTechnologies.appendChild(techElement);
+      techElement.innerHTML = `<i class="${tech.class} colored size-logo-modal"></i>`; 
+    });
+
     modal.style.display = 'block';
   });
 }
 
 // Gestionnaire d'événement pour fermer le modal
-modal.addEventListener('click', () => {
+closeModal.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
@@ -109,6 +120,6 @@ logo.addEventListener('click', () => {
 for (let i = 0; i < navitemLinks.length; i++) {
     // Ajouter un écouteur d'événements à chaque élément
     navitemLinks[i].addEventListener('click', () => {
-        navLinks.classList.remove('mobile-menu');
+      navLinks.classList.remove('mobile-menu');
     });
 }

@@ -8,7 +8,7 @@ body{
 h2{
     font-weight: 200;
     padding: 75px;
-    padding: 50px 0px 75px 0px
+    padding: 100px 0px 75px 0px
     
 }
 footer {
@@ -232,7 +232,7 @@ list-style: none;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -246,7 +246,6 @@ list-style: none;
 #modal-title{
     padding: 0px;
 }
-.modal-container-link{gap: 500px;}
 .size-logo-modal{
     font-size: 50px;
     color: #1e1e1e;
@@ -257,6 +256,21 @@ list-style: none;
 .link-site{
     text-decoration: none;
     padding-left: 25px;
+}
+
+#modal-technologies{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+.modal-container-technologie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.size-technologie{
+    font-size: 50px;
 }
 
 
@@ -306,7 +320,7 @@ list-style: none;
         font-size: 8px;
     }
     h2{
-        padding: 25px 0px 25px 0px;
+        padding: 75px 0px 25px 0px;
     }
     #gallery{
         grid-template-columns: 1fr 1fr;
@@ -323,6 +337,8 @@ list-style: none;
     }
     .size-logo-modal{
         font-size: 200%;
+    }.modal-container-technologie{
+        font-size: 13px;
     }
     #icone{
         flex-wrap: wrap; 
@@ -344,5 +360,8 @@ list-style: none;
 @media (max-width: 720px) {
     #gallery{
         grid-template-columns: 1fr;
+    }
+    .size-logo-modal{
+        font-size: 150%;
     }
     }
