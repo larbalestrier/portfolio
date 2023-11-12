@@ -9,23 +9,6 @@ const modalDescription = document.getElementById('modal-description');
 const linkGithub = document.querySelector('.link-github')
 const linkSite = document.querySelector('.link-site')
 
-/* script header */
-const navItems = document.querySelectorAll('.header_li');
-
-    // Parcourez chaque élément et ajoutez des écouteurs d'événements pour gérer le clic
-    navItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Ajoutez la classe "active" à l'élément cliqué
-            item.classList.add('active');
-            
-            // Parcourez les autres éléments et supprimez la classe "active" sauf pour l'élément cliqué
-            navItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                }
-            });
-        });
-    });
 /*section travaux */
 async function loadProjects() {
   try {
@@ -111,3 +94,21 @@ function createSkillElement(icone) {
 loadskill()
 
 
+// SCRIPT NAVBAR RESPONSIVE //
+const logo = document.querySelector(".logo-nav-responsive");
+const navLinks = document.querySelector(".header_nav");
+const navitemLinks = document.getElementsByClassName("header_li");
+
+
+
+logo.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile-menu');
+});
+
+// Itérer sur les éléments de la collection
+for (let i = 0; i < navitemLinks.length; i++) {
+    // Ajouter un écouteur d'événements à chaque élément
+    navitemLinks[i].addEventListener('click', () => {
+        navLinks.classList.remove('mobile-menu');
+    });
+}
