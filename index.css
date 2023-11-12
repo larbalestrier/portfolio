@@ -264,12 +264,13 @@ list-style: none;
     justify-content: center;
     gap: 10%;
     padding: 0;
+    margin-left: 10%;
 }
 .modal-container-technologie {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    
 }
 .size-technologie{
     font-size: 50px;
