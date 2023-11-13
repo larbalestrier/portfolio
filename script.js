@@ -1,7 +1,5 @@
 const gallery = document.querySelector('#gallery');
 const hardskill = document.querySelector('#icone');
-
-
 const modal = document.getElementById('modal');
 const closeModal = document.querySelector('.close-modal');
 const modalImage = document.getElementById('modal-image');
@@ -34,6 +32,7 @@ function createProjectElement(project) {
   const titleElement = document.createElement('h3');
   imgElement.src = project.imageUrl;
   titleElement.innerText = project.title;
+  imgElement.alt = "illustatrion du projet"
   projectElement.classList.add("container_project")
   projectElement.appendChild(imgElement);
   projectElement.appendChild(titleElement);

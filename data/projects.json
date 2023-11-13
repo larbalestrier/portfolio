@@ -5,7 +5,7 @@
         "imageUrl": "./assets/images/Argent-Bank.webp",
         "description": "En tant que développeur front-end chez Argent Bank, j'ai réalisé le front-end d'une application web React. J'ai également utilisé Redux pour gérer l'état de l'application. L'application permet aux utilisateurs de visiter la page d'accueil, de se connecter, de visualiser leur profil, et de se déconnecter. J'ai également appliqué des bonnes pratiques Green Code en optimisant les images et créant des composants réutilisables. J'ai également réalisé une documentation Swagger pour la gestions futurs des transactions.",
         "code": "https://github.com/larbalestrier/projet_11_ArgentBank-website",
-        "site": null,
+        "site": "https://larbalestrier.github.io/projet_11_ArgentBank-website/",
         "technologies": [
             {
                 "class": "devicon-html5-plain",
