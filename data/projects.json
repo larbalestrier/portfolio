@@ -148,7 +148,7 @@
         "title": "Booki",
         "imageUrl": "./assets/images/Booki.webp",
         "description": "En tant que développeur Front-End, j'ai été chargé d'intégrer l'interface du site Booki. Travaillant en collaboration étroite avec l'UI designer et le CTO de l'entreprise, j'ai transformé les maquettes en code HTML et CSS. Le résultat final a été une expérience utilisateur conviviale et un site web fonctionnel.",
-        "code": "",
+        "code": "https://github.com/larbalestrier/booki-projet3",
         "site": "",
         "technologies": [
             {
